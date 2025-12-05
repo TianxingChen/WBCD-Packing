@@ -18,6 +18,7 @@ eval_result/
 assets/*
 !assets/_download.py
 !assets/files
+!assets/objects
 
 policy/weights/*
 
