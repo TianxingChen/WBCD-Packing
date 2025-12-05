@@ -206,10 +206,10 @@ class place_object_box(Base_Task):
         self.close_box()
 
         self.info["info"] = {
-            **{f"{{{chr(65 + i)}}}": f"{self.selected_modelname[i]}/base{self.selected_model_id[i]}"
-            for i in range(len(self.selected_modelname))},
+            **{f"{{{chr(65 + i)}}}": f"{self.object_modelnames[i]}/base{self.object_ids[i]}"
+            for i in range(len(self.object_modelnames))},
             **{f"{{{chr(97 + i)}}}": self.arm_use[i]
-            for i in range(len(self.selected_modelname))}
+            for i in range(len(self.object_modelnames))}
         }
         return self.info
 

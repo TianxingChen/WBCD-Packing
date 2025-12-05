@@ -87,7 +87,7 @@ def get_all_cluttered_objects():
     return cluttered_objects_info, cluttered_objects_name, same_obj
 
 
-cluttered_objects_info, cluttered_objects_list, same_obj = get_all_cluttered_objects()
+# cluttered_objects_info, cluttered_objects_list, same_obj = get_all_cluttered_objects()
 
 
 def get_available_cluttered_objects(entity_on_scene: list):
